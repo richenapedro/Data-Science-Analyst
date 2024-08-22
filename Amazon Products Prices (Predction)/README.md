@@ -1,71 +1,95 @@
-# Student Alcohol Consumption
+# Amazon Product Sales
 
-## Overview
-This project analyzes a dataset containing social, gender, and study information from secondary school students to explore the factors influencing their alcohol consumption and academic performance. The goal is to conduct exploratory data analysis (EDA) and potentially predict students' final grades based on various attributes.
+## Project Description
+This project aims to analyze and forecast future sales of products sold on Amazon, using a dataset that contains information about prices, ratings, availability, and sales volume. Through data science techniques, the project seeks to identify patterns and insights that can help optimize sales and marketing strategies.
 
-## Motivation
-The motivation for this project stems from the interest in understanding how social and educational factors affect students' behavior, particularly their alcohol consumption. By analyzing this data, we can gain insights that may help in developing strategies to support students' well-being and academic success.
+## About the Dataset
+The dataset includes the following columns:
 
-## Dataset Features
-The dataset includes the following features for both the math (`student-mat.csv`) and Portuguese language (`student-por.csv`) courses:
+- **asin**: Amazon Standard Identification Number, a unique identifier for each product.
+- **product_title**: Name or title of the product.
+- **product_price**: Current price of the product.
+- **product_original_price**: Original price of the product before discounts.
+- **currency**: Currency in which the product price is listed.
+- **product_star_rating**: Average star rating of the product.
+- **product_num_ratings**: Number of ratings the product has received.
+- **product_url**: URL of the product page on Amazon.
+- **product_photo**: Link to the product photo.
+- **product_num_offers**: Number of different offers available for the product.
+- **product_minimum_offer_price**: Minimum price of the available offers.
+- **is_best_seller**: Indicator if the product is a best seller.
+- **is_amazon_choice**: Indicator if the product is an Amazon choice.
+- **is_prime**: Indicator if the product is eligible for Amazon Prime.
+- **climate_pledge_friendly**: Indicator if the product is labeled as climate-friendly.
+- **sales_volume**: Sales volume of the product.
+- **delivery**: Information about the delivery options for the product.
+- **has_variations**: Indicator if the product has variations (e.g., different sizes or colors).
+- **product_availability**: Availability status of the product.
+- **unit_price**: Price per unit of measurement.
+- **unit_count**: Number of units included in the product price.
 
-- **school**: Student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
-- **sex**: Student's sex (binary: 'F' - female or 'M' - male)
-- **age**: Student's age (numeric: from 15 to 22)
-- **address**: Student's home address type (binary: 'U' - urban or 'R' - rural)
-- **famsize**: Family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
-- **Pstatus**: Parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
-- **Medu**: Mother's education (numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education)
-- **Fedu**: Father's education (numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education)
-- **Mjob**: Mother's job (nominal: 'teacher', 'health' care related, 'services', 'at_home' or 'other')
-- **Fjob**: Father's job (nominal: 'teacher', 'health' care related, 'services', 'at_home' or 'other')
-- **reason**: Reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')
-- **guardian**: Student's guardian (nominal: 'mother', 'father' or 'other')
-- **traveltime**: Home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, 4 - >1 hour)
-- **studytime**: Weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, 4 - >10 hours)
-- **failures**: Number of past class failures (numeric: n if 1<=n<3, else 4)
-- **schoolsup**: Extra educational support (binary: yes or no)
-- **famsup**: Family educational support (binary: yes or no)
-- **paid**: Extra paid classes within the course subject (binary: yes or no)
-- **activities**: Extra-curricular activities (binary: yes or no)
-- **nursery**: Attended nursery school (binary: yes or no)
-- **higher**: Wants to take higher education (binary: yes or no)
-- **internet**: Internet access at home (binary: yes or no)
-- **romantic**: In a romantic relationship (binary: yes or no)
-- **famrel**: Quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
-- **freetime**: Free time after school (numeric: from 1 - very low to 5 - very high)
-- **goout**: Going out with friends (numeric: from 1 - very low to 5 - very high)
-- **Dalc**: Workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
-- **Walc**: Weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
-- **health**: Current health status (numeric: from 1 - very bad to 5 - very good)
-- **absences**: Number of school absences (numeric: from 0 to 93)
-- **G1**: First period grade (numeric: from 0 to 20)
-- **G2**: Second period grade (numeric: from 0 to 20)
-- **G3**: Final grade (numeric: from 0 to 20, output target)
+## Potential Data Analysis and Data Science Techniques
 
-## Source Information
-P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+### Descriptive Statistics
+- Calculate summary statistics for numerical columns (mean, median, min, max of prices, ratings, sales volume).
+- Count frequencies for categorical columns (how many products are best sellers, Amazon choices, Prime eligible).
 
-Fabio Pagnotta, Hossain Mohammad Amran.
-Email: fabio.pagnotta@studenti.unicam.it, mohammadamra.hossain@studenti.unicam.it
-University Of Camerino
+### Price Analysis
+- Compare current prices with original prices to assess discount levels.
+- Analyze price trends across different categories or brands.
 
-Dataset available at: [Kaggle](https://www.kaggle.com/datasets/uciml/student-alcohol-consumption?select=student-por.csv)
+### Rating Analysis
+- Examine the distribution of product ratings.
+- Correlate the number of ratings with the average star rating to identify trends.
 
-## Technical Aspects
-In this project, I used the following technologies and tools:
-- **Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **Development Environment**: Jupyter Notebook
-- **Data**: The dataset was obtained from the Kaggle website.
+### Sales Volume Analysis
+- Identify best-selling products.
+- Analyze sales volume in relation to prices, ratings, and other attributes.
 
-## To Do
-Here are some improvements and features I plan to implement in the future:
-- Conduct detailed exploratory data analysis (EDA).
-- Develop predictive models for students' final grades.
-- Improve the documentation and visualization of findings.
-- Investigate the relationship between alcohol consumption and academic performance.
+### Product Classification
+- Group products based on categories such as best seller, Amazon choice, Prime eligibility, and climate-friendly status.
+- Perform clustering to identify patterns or segments among products.
 
-## Credits
-Special thanks to [mention any person or resource that helped with the project, such as tutorials, articles, or colleagues who collaborated with you]. 
-- [Resource or author's name] - [Description of what you learned or how it was helpful]
+### Predictive Modeling
+- **Price Prediction**: Use regression models (e.g., linear regression, decision trees) to predict product prices based on attributes like ratings, number of offers, and best seller status.
+- **Sales Volume Prediction**: Apply regression analysis or time series forecasting to predict future sales volumes.
+- **Rating Prediction**: Predict product ratings using characteristics such as price, number of ratings, and best seller status.
+
+### Recommendation Systems
+- Build recommendation systems based on collaborative filtering or content-based filtering to suggest products to customers based on their preferences and past behavior.
+
+### Sentiment Analysis
+- Analyze customer reviews (if available) to assess sentiment and correlate it with ratings and sales volume.
+
+### Visualizations
+- **Histograms and Bar Charts**: To visualize the distribution of prices, ratings, and sales volumes.
+- **Box Plots**: To compare prices and ratings across different product categories.
+- **Scatter Plots**: To visualize relationships between numerical variables (e.g., price vs. sales volume).
+- **Heatmaps**: To show correlations between different attributes.
+
+## Data Cleaning and Preprocessing
+- Handle missing values (e.g., impute, remove).
+- Convert categorical variables into numerical format using techniques like one-hot encoding.
+- Normalize or scale numerical features if necessary for certain algorithms.
+
+## Advanced Techniques
+- **Feature Engineering**: Create new features from existing data (e.g., percentage discount from original and current prices).
+- **Dimensionality Reduction**: Use PCA or other techniques if the dataset has high dimensionality.
+
+These analyses and techniques will help uncover valuable insights, optimize pricing strategies, improve customer satisfaction, and ultimately drive sales and profitability.
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Statsmodels
+- [Other libraries as necessary]
+
+## Contributions
+Contributions are welcome! Feel free to open a pull request or report issues.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
