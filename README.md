@@ -45,7 +45,6 @@ Here are some improvements and features I plan to implement in the future:
 - Add more analyses or visualizations.
 - Implement a predictive model.
 - Improve the documentation.
-- Other tasks you plan to perform.
 
 ## Credits
 Special thanks to [mention any person or resource that helped with the project, such as tutorials, articles, or colleagues who collaborated with you]. 
