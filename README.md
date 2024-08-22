@@ -38,7 +38,7 @@ In this project, I used the following technologies and tools:
 - **Languages**: Python
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 - **Development Environment**: Jupyter Notebook
-- **Data**: The dataset was collected from [include the source, if available].
+- **Data**: The dataset was collected from [https://www.kaggle.com/datasets/haseebindata/student-performance-predictions].
 
 ## To Do
 Here are some improvements and features I plan to implement in the future:
