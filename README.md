@@ -50,7 +50,7 @@ Fabio Pagnotta, Hossain Mohammad Amran.
 Email: fabio.pagnotta@studenti.unicam.it, mohammadamra.hossain@studenti.unicam.it
 University Of Camerino
 
-Dataset available at: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION)
+Dataset available at: [Kaggle](https://www.kaggle.com/datasets/uciml/student-alcohol-consumption?select=student-por.csv)
 
 ## Technical Aspects
 In this project, I used the following technologies and tools:
