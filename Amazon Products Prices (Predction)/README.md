@@ -1,4 +1,4 @@
-# Amazon Product Sales
+# Amazon Product Sales Forecasting
 
 ## Project Description
 This project aims to analyze and forecast future sales of products sold on Amazon, using a dataset that contains information about prices, ratings, availability, and sales volume. Through data science techniques, the project seeks to identify patterns and insights that can help optimize sales and marketing strategies.
