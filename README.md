@@ -1,50 +1,70 @@
-# Student Performance Predictions
+# Student Alcohol Consumption
 
 ## Overview
-This project uses a student performance dataset to evaluate and predict academic outcomes based on various factors that influence student success. The goal is to understand how these factors correlate with students' final grades and to build a predictive model that can forecast student performance.
+This project analyzes a dataset containing social, gender, and study information from secondary school students to explore the factors influencing their alcohol consumption and academic performance. The goal is to conduct exploratory data analysis (EDA) and potentially predict students' final grades based on various attributes.
 
 ## Motivation
-The motivation for this project arose from the interest in identifying which factors impact students' academic performance. Understanding these relationships can help educators identify students who may need additional support to improve their outcomes.
+The motivation for this project stems from the interest in understanding how social and educational factors affect students' behavior, particularly their alcohol consumption. By analyzing this data, we can gain insights that may help in developing strategies to support students' well-being and academic success.
 
 ## Dataset Features
-The dataset includes the following features:
-- **StudentID**: A unique identifier for each student.
-- **Name**: The name of the student.
-- **Gender**: The gender of the student (Male/Female).
-- **AttendanceRate**: The percentage of classes attended by the student.
-- **StudyHoursPerWeek**: The number of hours the student studies per week.
-- **PreviousGrade**: The grade the student received in the previous semester (from 0 to 100).
-- **ExtracurricularActivities**: The number of extracurricular activities the student is involved in.
-- **ParentalSupport**: A qualitative assessment of the level of support provided by the student's parents (High/Medium/Low).
-- **FinalGrade**: The student's final grade (from 0 to 100), which serves as the target variable for prediction.
+The dataset includes the following features for both the math (`student-mat.csv`) and Portuguese language (`student-por.csv`) courses:
 
-## Use Cases
-- **Student Performance Prediction**: Build machine learning models to predict students' final grades based on other features.
-- **Exploratory Data Analysis**: Explore the relationships between different factors (such as attendance or study habits) and academic performance.
-- **Feature Importance Analysis**: Examine which characteristics are most predictive of academic success, providing insights into key areas for educational interventions.
-- **Educational Interventions**: Identify patterns in the data to implement targeted interventions that help students improve in specific areas.
+- **school**: Student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
+- **sex**: Student's sex (binary: 'F' - female or 'M' - male)
+- **age**: Student's age (numeric: from 15 to 22)
+- **address**: Student's home address type (binary: 'U' - urban or 'R' - rural)
+- **famsize**: Family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
+- **Pstatus**: Parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
+- **Medu**: Mother's education (numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education)
+- **Fedu**: Father's education (numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education)
+- **Mjob**: Mother's job (nominal: 'teacher', 'health' care related, 'services', 'at_home' or 'other')
+- **Fjob**: Father's job (nominal: 'teacher', 'health' care related, 'services', 'at_home' or 'other')
+- **reason**: Reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')
+- **guardian**: Student's guardian (nominal: 'mother', 'father' or 'other')
+- **traveltime**: Home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, 4 - >1 hour)
+- **studytime**: Weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, 4 - >10 hours)
+- **failures**: Number of past class failures (numeric: n if 1<=n<3, else 4)
+- **schoolsup**: Extra educational support (binary: yes or no)
+- **famsup**: Family educational support (binary: yes or no)
+- **paid**: Extra paid classes within the course subject (binary: yes or no)
+- **activities**: Extra-curricular activities (binary: yes or no)
+- **nursery**: Attended nursery school (binary: yes or no)
+- **higher**: Wants to take higher education (binary: yes or no)
+- **internet**: Internet access at home (binary: yes or no)
+- **romantic**: In a romantic relationship (binary: yes or no)
+- **famrel**: Quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+- **freetime**: Free time after school (numeric: from 1 - very low to 5 - very high)
+- **goout**: Going out with friends (numeric: from 1 - very low to 5 - very high)
+- **Dalc**: Workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+- **Walc**: Weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+- **health**: Current health status (numeric: from 1 - very bad to 5 - very good)
+- **absences**: Number of school absences (numeric: from 0 to 93)
+- **G1**: First period grade (numeric: from 0 to 20)
+- **G2**: Second period grade (numeric: from 0 to 20)
+- **G3**: Final grade (numeric: from 0 to 20, output target)
 
-## Potential Insights
-- **Correlation between Study Habits and Performance**: Determine how study time contributes to academic success.
-- **Impact of Attendance on Grades**: Analyze the extent to which regular attendance influences final grades.
-- **Role of Extracurricular Activities**: Assess whether participation in extracurricular activities positively or negatively impacts academic performance.
-- **Influence of Parental Support**: Examine how different levels of parental support affect student outcomes.
+## Source Information
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
 
-## Conclusion
-The student performance dataset is a versatile tool for educators, data scientists, and researchers interested in understanding and predicting academic success. By analyzing this data, stakeholders can gain valuable insights into the factors contributing to academic performance and develop strategies to improve educational outcomes.
+Fabio Pagnotta, Hossain Mohammad Amran.
+Email: fabio.pagnotta@studenti.unicam.it, mohammadamra.hossain@studenti.unicam.it
+University Of Camerino
+
+Dataset available at: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION)
 
 ## Technical Aspects
 In this project, I used the following technologies and tools:
 - **Languages**: Python
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 - **Development Environment**: Jupyter Notebook
-- **Data**: The dataset was collected from [https://www.kaggle.com/datasets/haseebindata/student-performance-predictions].
+- **Data**: The dataset was obtained from the UCI Machine Learning Repository.
 
 ## To Do
 Here are some improvements and features I plan to implement in the future:
-- Add more analyses or visualizations.
-- Implement a predictive model.
-- Improve the documentation.
+- Conduct detailed exploratory data analysis (EDA).
+- Develop predictive models for students' final grades.
+- Improve the documentation and visualization of findings.
+- Investigate the relationship between alcohol consumption and academic performance.
 
 ## Credits
 Special thanks to [mention any person or resource that helped with the project, such as tutorials, articles, or colleagues who collaborated with you]. 
