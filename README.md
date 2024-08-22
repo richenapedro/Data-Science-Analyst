@@ -57,7 +57,7 @@ In this project, I used the following technologies and tools:
 - **Languages**: Python
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 - **Development Environment**: Jupyter Notebook
-- **Data**: The dataset was obtained from the UCI Machine Learning Repository.
+- **Data**: The dataset was obtained from the Kaggle website.
 
 ## To Do
 Here are some improvements and features I plan to implement in the future:
