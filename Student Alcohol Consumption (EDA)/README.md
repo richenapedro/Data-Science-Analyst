@@ -55,17 +55,15 @@ Dataset available at: [Kaggle](https://www.kaggle.com/datasets/uciml/student-alc
 ## Technical Aspects
 In this project, I used the following technologies and tools:
 - **Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+- **Libraries**: Pandas, Matplotlib, Seaborn
 - **Development Environment**: Jupyter Notebook
 - **Data**: The dataset was obtained from the Kaggle website.
 
 ## To Do
 Here are some improvements and features I plan to implement in the future:
-- Conduct detailed exploratory data analysis (EDA).
-- Develop predictive models for students' final grades.
-- Improve the documentation and visualization of findings.
-- Investigate the relationship between alcohol consumption and academic performance.
+- Conduct a more detailed exploratory data analysis (EDA) to uncover deeper insights.
+- Enhance the documentation and visualization of findings for better clarity and understanding.
+- Investigate additional relationships between alcohol consumption and various factors affecting academic performance.
+- Explore the potential impact of other social and educational factors on students' grades.
+- Consider gathering more data or using additional datasets to enrich the analysis.
 
-## Credits
-Special thanks to [mention any person or resource that helped with the project, such as tutorials, articles, or colleagues who collaborated with you].
-- [Resource or author's name] - [Description of what you learned or how it was helpful]
