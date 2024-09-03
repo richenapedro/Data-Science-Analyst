@@ -19,6 +19,8 @@ The dataset includes the following columns:
 - **smoking_status**: Status of smoking (nominal: 'formerly smoked', 'never smoked', 'smokes', or 'Unknown').
 - **stroke**: Indicator (1 if the patient had a stroke, 0 if not).
 
+You can access the dataset [here](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset?select=healthcare-dataset-stroke-data.csv).
+
 ## Potential Data Analysis and Data Science Techniques
 
 ### Descriptive Statistics
