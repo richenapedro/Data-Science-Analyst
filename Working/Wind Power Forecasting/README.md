@@ -25,4 +25,4 @@ Renewable energy is a crucial topic for ensuring a sustainable future. Wind ener
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For inquiries, please contact [your email or GitHub profile link].
+For inquiries, please contact richenapedro@gmail.com.
