@@ -60,9 +60,3 @@ Future work could focus on incorporating more detailed meteorological data and e
 For more information on wind energy forecasting techniques, consider the following resources:
 - [Hindawi: Modeling and Predicting Wind Power](https://www.hindawi.com/journals/mpe/2010/684742/)
 - [ScienceDirect: Wind Power Forecasting](https://www.sciencedirect.com/science/article/abs/pii/S0925231201007020)
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For inquiries, please contact richenapedro@gmail.com.
