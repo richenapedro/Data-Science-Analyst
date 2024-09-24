@@ -28,7 +28,7 @@ In this project, I utilized the following technologies and tools:
 
 ## Package Installation
 To run this project, ensure that the following Python packages are installed:
-bash pip install numpy pandas matplotlib seaborn scikit-learn statsmodels
+```bash pip install numpy pandas matplotlib seaborn scikit-learn statsmodels ```
 
 ## Data Loading
 Data is loaded from CSV files that contain information about wind energy generation and related factors. Initial checks are performed to identify any missing values or data integrity issues.
