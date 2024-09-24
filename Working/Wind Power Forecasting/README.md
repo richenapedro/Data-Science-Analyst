@@ -19,15 +19,12 @@ The dataset contains various features related to weather conditions, turbine spe
 - **Rotor Diameter**: Diameter of the rotor in meters.
 - **Height**: Height of the turbine in meters.
 
-## Source Information
-The dataset is sourced from [insert source or dataset link if available], providing relevant data for wind energy generation analysis.
-
 ## Technical Aspects
 In this project, I utilized the following technologies and tools:
 - **Languages**: Python
 - **Libraries**: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Statsmodels
 - **Development Environment**: Jupyter Notebook
-- **Data**: The dataset was obtained from [insert source or dataset link if available].
+- **Data**: The dataset was obtained from [https://www.kaggle.com/datasets/theforcecoder/wind-power-forecasting].
 
 ## Package Installation
 To run this project, ensure that the following Python packages are installed:
