@@ -53,9 +53,3 @@ If you use this dataset in your research, please credit the authors.
 
 ### Citation
 J. Wang, K. Fu, C.T. Lu, “SOSNet: A Graph Convolutional Network Approach to Fine-Grained Cyberbullying Detection,” Proceedings of the 2020 IEEE International Conference on Big Data (IEEE BigData 2020), December 10-13, 2020.
-
-## License
-This project is licensed under the CC BY 4.0 License.
-
-## Contact
-For inquiries, please contact [your email address].
