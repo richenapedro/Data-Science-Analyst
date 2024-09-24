@@ -22,11 +22,11 @@ In this project, I utilized the following technologies and tools:
 - **Languages**: Python
 - **Libraries**: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, NLTK (Natural Language Toolkit), TensorFlow/Keras (if using deep learning models)
 - **Development Environment**: Jupyter Notebook
-- **Data**: The dataset can be accessed from [insert dataset source or link if available].
+- **Data**: The dataset can be accessed from [https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification].
 
 ## Package Installation
 To run this project, ensure that the following Python packages are installed:
-bash pip install numpy pandas matplotlib seaborn scikit-learn nltk tensorflow
+```bash pip install numpy pandas matplotlib seaborn scikit-learn nltk tensorflow```
 
 ## Data Loading
 Data is loaded from CSV files that contain information about tweets and their associated labels. Initial checks are performed to identify any missing values or data integrity issues.
